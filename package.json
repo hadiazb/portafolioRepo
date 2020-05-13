@@ -1,0 +1,19 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "En este archivo vamos a incluir todos los archivos que se requieren para el desarrollo del portafolio personal",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server",
+    "sass": "node-sass src/sass/style.sass src/style/style.css"
+  },
+  "keywords": [
+    "portafolio"
+  ],
+  "author": "Hugo Andrés Díaz Bernal <hugoandresdiazbernal@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1"
+  }
+}
