@@ -13,8 +13,8 @@
   background: #ffff23; }
   .header__Mobile {
     height: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between; }
@@ -66,6 +66,47 @@
     background: #303952;
     z-index: 1;
     opacity: .85; }
+
+.aboutmy {
+  position: absolute;
+  left: 0;
+  top: calc(50px + 80vh);
+  width: 100%;
+  height: 550px; }
+  .aboutmy__background {
+    width: 100%;
+    height: 550px;
+    background-image: url("../images/perfildos.jpg");
+    background-position: 60% 10%;
+    background-size: cover;
+    background-repeat: norepeat; }
+  .aboutmy__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 550px;
+    background: #000000;
+    opacity: .3;
+    z-index: 1; }
+  .aboutmy__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 550px;
+    display: block;
+    padding-top: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    z-index: 10; }
+    .aboutmy__content h2 {
+      width: 100%;
+      padding: 10px 0; }
+    .aboutmy__content p {
+      font-size: 1em;
+      width: 100%; }
 
 .btn {
   padding: 20px;
