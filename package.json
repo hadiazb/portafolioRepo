@@ -2,10 +2,10 @@
   "name": "portafolio",
   "version": "1.0.0",
   "description": "En este archivo vamos a incluir todos los archivos que se requieren para el desarrollo del portafolio personal",
-  "main": "src/index.html",
+  "main": "/src/index.html",
   "scripts": {
     "start": "live-server",
-    "sass": "node-sass src/sass/style.sass src/style/style.css"
+    "sass": "node-sass src/sass/style.sass src/style/style.css -w"
   },
   "keywords": [
     "portafolio"
@@ -15,5 +15,14 @@
   "dependencies": {
     "live-server": "^1.2.1",
     "node-sass": "^4.14.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hadiazb/portafolioRepo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hadiazb/portafolioRepo/issues"
+  },
+  "homepage": "https://github.com/hadiazb/portafolioRepo#readme"
 }

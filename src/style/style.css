@@ -1,31 +1,90 @@
-header {
-  background: rgba(102, 112, 8, 0.5); }
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
-body {
-  background-color: #757c76a9;
-  color: rgba(245, 245, 245, 0.719); }
-
 .header {
+  position: fixed;
+  height: inherit;
   width: 100%;
-  height: 100vh;
-  margin: 10px 20px 30px; }
-  .header__login {
-    background-color: rgba(234, 235, 255, 0.7);
-    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #ffff23; }
+  .header__Mobile {
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .header__Mobile-logo {
+      width: 40px;
+      height: 40px; }
+    .header__Mobile-icono {
+      font-size: 35px; }
+
+.intro {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff; }
+  .intro__content {
+    max-width: 40rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    z-index: 10;
+    text-align: center; }
+    .intro__content h1 {
+      padding: 20px;
+      text-shadow: 0 0 15px #000; }
+    .intro__content p {
+      text-shadow: 0 0 5px #000;
+      padding-bottom: 50px; }
+  .intro__video {
+    border: 1px solid blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden; }
+    .intro__video .video {
+      min-width: 100%;
+      min-height: 100%; }
+  .intro__overlay {
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #303952;
+    z-index: 1;
+    opacity: .85; }
 
 .btn {
-  display: inline-block;
-  color: white;
-  background-color: #ea83ee;
-  line-height: 2.5;
-  border-radius: 3px;
-  font-size: 24px; }
-  .btn__icon {
-    font-size: .6em; }
-  .btn.btn--info {
-    background-color: #42b8dd; }
+  padding: 20px;
+  color: #fff;
+  font-size: 1.1rem;
+  background: #c44569b7;
+  text-decoration: none;
+  font-family: Courier New, Courier, monospace;
+  text-shadow: 0 0 5px #000 px;
+  border-radius: 5px; }
+  .btn:hover {
+    background: #f51f5c;
+    text-decoration: underline; }
+
+h1 {
+  font-size: 2.5em;
+  font-family: Courier New, Courier, monospace;
+  letter-spacing: 2px; }
+
+p {
+  font-family: Courier New, Courier, monospace;
+  letter-spacing: 1px; }

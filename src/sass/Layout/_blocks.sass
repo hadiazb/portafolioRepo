@@ -1,3 +1,68 @@
-header 
-  background: rgba(244,233 ,233 , .5)
-  
+// Bloque de estilos para el menu de navegación pantalla mobile y tablet
+.header
+  position: fixed
+  height: inherit
+  width: 100%
+  top: 0
+  left: 0
+  z-index: 1000
+  background: rgb(345,324 ,35)
+  &__Mobile
+    height: $altura-nav
+    @include margen
+    @include centerSpaceBetween
+    &-logo
+      width: $anchoaltoicono
+      height: $anchoaltoicono
+    &-icono
+      font-size: $anchoaltoicono - 5px
+
+// Bloque de codigo que se encarga de estilizar todo el contenido correspondiente al intro
+.intro
+  position: absolute
+  top: $altura-nav
+  left: 0
+  height: $altura-video
+  width: 100%
+  display: flex
+  align-items: center
+  color: #fff
+  &__content
+    max-width: 40rem
+    padding-left: 1rem
+    padding-right: 1rem
+    margin: auto
+    z-index: 10
+    text-align: center
+    h1 
+      padding: 20px
+      text-shadow: 0 0 15px #000
+    p 
+      text-shadow: 0 0 5px #000
+      padding-bottom: 50px 
+
+  &__video
+    border: 1px solid blue
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: $altura-video
+    overflow: hidden
+    .video
+      min-width: 100%
+      min-height: 100%
+  &__overlay
+    height: $altura-video
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background: #303952
+    z-index: 1
+    opacity: .85
+
+
+
+
+
