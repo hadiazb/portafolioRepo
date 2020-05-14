@@ -5,7 +5,7 @@
   "main": "/src/index.html",
   "scripts": {
     "start": "live-server",
-    "sass": "node-sass src/sass/style.sass src/style/style.css -w"
+    "sass": "node-sass src/sass/style.sass src/style/style.css -w -E"
   },
   "keywords": [
     "portafolio"

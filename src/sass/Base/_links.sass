@@ -1,0 +1,21 @@
+.active 
+  background-color: rgba(0, 0, 0, 0.5)
+
+.fade 
+  animation-name: fade
+  animation-duration: .5s
+
+  
+@keyframes fade 
+  0% 
+    // opacity: .2
+    transform: rotate(-30deg)
+  25% 
+    transform: rotate(30deg)
+    // opacity: 1
+  50%
+    transform: rotate(-30deg)
+    
+  100%
+    transform: rotate(0deg)
+
