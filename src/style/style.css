@@ -1,16 +1,19 @@
+/* line 1, src/sass/Layout/_side.sass */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
+/* line 2, src/sass/Layout/_blocks.sass */
 .header {
   position: fixed;
-  height: inherit;
-  width: 100%;
   top: 0;
   left: 0;
+  height: inherit;
+  width: 100%;
   z-index: 1000;
-  background: #ffff23; }
+  background: #dbd879; }
+  /* line 7, src/sass/Layout/_blocks.sass */
   .header__Mobile {
     height: 50px;
     padding-left: 20px;
@@ -18,12 +21,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between; }
+    /* line 11, src/sass/Layout/_blocks.sass */
     .header__Mobile-logo {
       width: 40px;
       height: 40px; }
+    /* line 14, src/sass/Layout/_blocks.sass */
     .header__Mobile-icono {
       font-size: 35px; }
 
+/* line 18, src/sass/Layout/_blocks.sass */
 .intro {
   position: absolute;
   top: 50px;
@@ -32,7 +38,9 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #fff; }
+  /* line 23, src/sass/Layout/_blocks.sass */
   .intro__content {
     max-width: 40rem;
     padding-left: 1rem;
@@ -40,39 +48,45 @@
     margin: auto;
     z-index: 10;
     text-align: center; }
+    /* line 30, src/sass/Layout/_blocks.sass */
     .intro__content h1 {
       padding: 20px;
       text-shadow: 0 0 15px #000; }
+    /* line 33, src/sass/Layout/_blocks.sass */
     .intro__content p {
       text-shadow: 0 0 5px #000;
       padding-bottom: 50px; }
+  /* line 36, src/sass/Layout/_blocks.sass */
   .intro__video {
-    border: 1px solid blue;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     height: 80vh;
+    width: 100%;
     overflow: hidden; }
+    /* line 40, src/sass/Layout/_blocks.sass */
     .intro__video .video {
       min-width: 100%;
       min-height: 100%; }
+  /* line 43, src/sass/Layout/_blocks.sass */
   .intro__overlay {
-    height: 80vh;
-    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    height: 80vh;
+    width: 100%;
     background: #303952;
     z-index: 1;
     opacity: .85; }
 
+/* line 51, src/sass/Layout/_blocks.sass */
 .aboutmy {
   position: absolute;
-  left: 0;
   top: calc(50px + 80vh);
-  width: 100%;
-  height: 550px; }
+  left: 0;
+  height: 550px;
+  width: 100%; }
+  /* line 54, src/sass/Layout/_blocks.sass */
   .aboutmy__background {
     width: 100%;
     height: 550px;
@@ -80,34 +94,39 @@
     background-position: 60% 10%;
     background-size: cover;
     background-repeat: norepeat; }
+  /* line 61, src/sass/Layout/_blocks.sass */
   .aboutmy__overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     height: 550px;
+    width: 100%;
     background: #000000;
     opacity: .3;
     z-index: 1; }
+  /* line 67, src/sass/Layout/_blocks.sass */
   .aboutmy__content {
     position: absolute;
+    display: block;
     top: 0;
     left: 0;
-    width: 100%;
     height: 550px;
-    display: block;
-    padding-top: 250px;
+    width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 250px;
     color: #ffffff;
     z-index: 10; }
+    /* line 75, src/sass/Layout/_blocks.sass */
     .aboutmy__content h2 {
       width: 100%;
       padding: 10px 0; }
+    /* line 78, src/sass/Layout/_blocks.sass */
     .aboutmy__content p {
       font-size: 1em;
       width: 100%; }
 
+/* line 83, src/sass/Layout/_blocks.sass */
 .myProyects {
   position: absolute;
   top: calc(50px + 80vh + 550px);
@@ -116,65 +135,75 @@
   width: 100%;
   padding-left: 20px;
   padding-right: 20px; }
+  /* line 87, src/sass/Layout/_blocks.sass */
   .myProyects__title {
     width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center; }
+  /* line 91, src/sass/Layout/_blocks.sass */
   .myProyects__slider {
     width: 100%;
-    height: calc(400px - 50px - 50px);
+    height: 300px;
     text-align: center; }
+    /* line 95, src/sass/Layout/_blocks.sass */
     .myProyects__slider img {
       width: 220px;
       margin-top: 20px;
       border-radius: 3px;
       box-shadow: 0 0 5px #000; }
+    /* line 100, src/sass/Layout/_blocks.sass */
     .myProyects__slider h4 {
       padding: 10px 0; }
+    /* line 102, src/sass/Layout/_blocks.sass */
     .myProyects__slider p {
       width: 220px;
       margin: 0 auto;
       font-size: .9em;
       text-align: left; }
+  /* line 107, src/sass/Layout/_blocks.sass */
   .myProyects__directions {
-    height: 300px;
     position: absolute;
+    height: 300px;
     top: 50px;
     left: 20px;
     right: 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    justify-content: space-between; }
+    /* line 114, src/sass/Layout/_blocks.sass */
     .myProyects__directions a {
-      width: 20px;
-      height: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
+      width: 20px;
+      height: 20px;
       text-decoration: none;
       border-radius: 50%;
       background-color: rgba(0, 0, 0, 0.5);
       color: white;
       font-size: 10px; }
+  /* line 123, src/sass/Layout/_blocks.sass */
   .myProyects__circulos {
     width: 100%;
     height: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
+    /* line 127, src/sass/Layout/_blocks.sass */
     .myProyects__circulos-circles {
       height: 20px;
       width: 20px;
+      display: inline-block;
       border-radius: 50%;
       border: 1px solid black;
       margin-left: 3px;
       margin: 0 2px;
       background: #dcdde1;
-      display: inline-block;
       cursor: pointer; }
 
+/* line 2, src/sass/Base/_botones.sass */
 .btn {
   padding: 20px;
   color: #fff;
@@ -184,37 +213,28 @@
   font-family: Courier New, Courier, monospace;
   text-shadow: 0 0 5px #000 px;
   border-radius: 5px; }
+  /* line 11, src/sass/Base/_botones.sass */
   .btn:hover {
     background: #f51f5c;
     text-decoration: underline; }
 
+/* line 1, src/sass/Base/_links.sass */
 .active {
   background-color: rgba(0, 0, 0, 0.5); }
 
-.fade {
-  animation-name: fade;
-  animation-duration: .5s; }
-
-@keyframes fade {
-  0% {
-    transform: rotate(-30deg); }
-  25% {
-    transform: rotate(30deg); }
-  50% {
-    transform: rotate(-30deg); }
-  100% {
-    transform: rotate(0deg); } }
-
+/* line 1, src/sass/Base/_tipografias.sass */
 h1 {
   font-size: 2em;
   font-family: Courier New, Courier, monospace;
   letter-spacing: 2px; }
 
+/* line 6, src/sass/Base/_tipografias.sass */
 h2 {
   font-size: 1.5em;
   font-family: Courier New, Courier, monospace;
   letter-spacing: 2px; }
 
+/* line 11, src/sass/Base/_tipografias.sass */
 p {
   font-family: Courier New, Courier, monospace;
   letter-spacing: 1px; }

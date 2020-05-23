@@ -1,7 +1,26 @@
-@mixin centerSpaceBetween
+@mixin flex-one
   display: flex
   align-items: center
   justify-content: space-between
+
+@mixin flex-two
+  display: flex
+  align-items: center
+  justify-content: center
+
+@mixin flex-three
+  display: flex
+  align-items: center
+  justify-content: space-around
+
+@mixin ubications($top, $left, $height, $width)
+  top: $top
+  left: $left
+  height: $height
+  width: $width
+
+
+
 
 @mixin margen
   padding-left: 20px

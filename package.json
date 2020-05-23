@@ -2,10 +2,10 @@
   "name": "portafolio",
   "version": "1.0.0",
   "description": "En este archivo vamos a incluir todos los archivos que se requieren para el desarrollo del portafolio personal",
-  "main": "/src/index.html",
+  "main": "./src/index.html",
   "scripts": {
     "start": "live-server",
-    "sass": "node-sass src/sass/style.sass src/style/style.css -w -E"
+    "sass": "node-sass src/sass/style.sass src/style/style.css -c -w"
   },
   "keywords": [
     "portafolio"
