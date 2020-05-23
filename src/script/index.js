@@ -31,7 +31,7 @@ function mostrarSlides(n) {
     for (let i = 0; i < circulos.length; i++) {
         circulos[i].className = circulos[i].className.replace('active', '');
     }
-
+    
     slides[indice - 1].style.display = 'block';
     circulos[indice -1].className += 'active';
 }

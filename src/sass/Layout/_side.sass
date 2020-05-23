@@ -3,4 +3,22 @@
   margin: 0
   padding: 0
 
+body::-webkit-scrollbar 
+  width: 10px;
+  background: rgba(255,255,255, .2)
+  box-shadow: 0 0 5px black
 
+body::-webkit-scrollbar-thumb 
+  box-shadow: 0 0 5px black
+  border-radius: 5px;
+  background: $color-grey
+
+.container::-webkit-scrollbar 
+  height: 10px;
+  background: rgba(255,255,255, .2)
+  box-shadow: 0 0 2px black
+
+.container::-webkit-scrollbar-thumb 
+  height: 10px;
+  border-radius: 5px;
+  background: $color-grey

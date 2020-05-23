@@ -2,7 +2,7 @@
 .header
   position: fixed
   @include ubications(0, 0, inherit, 100%)
-  z-index: 1000
+  z-index: 100
   background: $color-secondary
   &__Mobile
     height: $altura-nav
@@ -13,10 +13,103 @@
       height: $anchoaltoicono
     &-icono
       font-size: $anchoaltoicono - 5px
+      & a 
+        text-decoration: none
+        color: $color-black
+        @include flex-one
+// Bloque de codigp enfocado a la sección de menu mobile
+
+.mobile
+  position: fixed
+  top: -100%
+  left: -100%
+  height: 510px
+  width: 315px
+  @include margen
+  z-index: 1000
+  border-radius: 0 0 $border-radius  0
+  background-color: $color-black
+  &__back
+    height: 50px
+    width: 100%
+    @include flex-four
+    font-size: 1.3em
+    & a
+      text-decoration: none
+      color: $color-white
+  &__logo
+    height: 90px
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
+    & img 
+      width: 100%
+  &__informations
+    height: 250px
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    &-click 
+      height: 30px
+      width: 130px
+      border: 1px solid $color-white
+      opacity: .6
+      background-color: transparent
+      border-radius: $border-radius-uno
+      & a 
+        width: 100%
+        color:  $color-white
+        text-decoration: none
+    &-click:hover
+      opacity: 1
+    &-diferent
+      height: 30px
+      width: 130px
+      border-radius: $border-radius-uno 
+      border: none
+      opacity: .6
+      background-color: $color-secondary
+      & a 
+        width: 100%
+        color: $color-black
+        font-weight: 900
+        text-decoration: none
+    &-diferent:hover
+      opacity: 1
+  &__socialMedia
+    height: 80px
+    width: 100%
+    display: flex 
+    align-items: center 
+    justify-content: space-evenly
+    padding-left: 30px
+    padding-right: 30px
+    &-red 
+      width: 40px
+      height: 40px 
+      display: flex
+      justify-content: center
+      align-items: center 
+      background-color: $color-white
+      opacity: .7
+      border-radius: 50%
+      & a 
+        display: flex
+        justify-content: center
+        align-items: center 
+        color: $color-black
+        text-decoration: none
+        & span 
+          font-size: 1.7em
+
 
 // Bloque de codigo que se encarga de estilizar todo el contenido correspondiente al intro
 .intro
-  position: absolute
+  position: block
   @include ubications($positionIntro, 0, $altura-video, 100%)
   @include flex-two
   color: #fff
@@ -49,8 +142,9 @@
 // Bloque correspondiente a la sección sobre mi.
   
 .aboutmy
-  position: absolute
-  @include ubications($possitionAboutmy, 0, $altura-sobremi, 100%)
+  position: relative
+  width: 100%
+  height: $altura-sobremi
   &__background
     width: 100%
     height: $altura-sobremi
@@ -81,8 +175,9 @@
 // Bloque para estilizar los componentes correspondientes a la sección de mis proyectos
 
 .myProyects
-  position: absolute
-  @include ubications($possitionmyProyects, 0, $altura-myProyects, 100%)
+  position: relative
+  width: 100%
+  height: $altura-myProyects
   @include margen
   &__title
     width: 100%
@@ -135,7 +230,74 @@
       background:  #dcdde1
       cursor: pointer
 
+// Bloque para estilizar los componentes correspondientes a la sección del carousel de tutoriales
 
+.carousel
+  position: relative
+  width: 100%
+  height: $alturaTutorials 
+  @include margen
+  padding-top: 20px
+  padding-bottom: 20px
+  background-color: $color-secondary
+  & h2 
+    width: 100%
+    padding: 10px 0
+    text-align: center
+  &__container
+    display: block
+    height: $alturaTutorials  - 100px
+    padding-top: 30px
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    &::-webkit-scrollbar 
+      height: 5px;
+      background: rgba(255,255,255, .2)
+      box-shadow: 0 0 1px black
+    &::-webkit-scrollbar-thumb 
+      height: 5px;
+      border-radius: 5px;
+      background: $color-secondary
+    &-item 
+      display: inline-block;
+      width: 260px
+      height: 300px
+      margin: 5px
+      background: $color-brand
+      border-radius: $border-radius
+      box-shadow: 0 0 8px $color-darkgrey
+      & a 
+        text-decoration: none
+        & img 
+          width: 100%
+          border-top-left-radius: $border-radius
+          border-top-right-radius: $border-radius
+        & h4 
+          padding: 8px 
+          text-align: center
+          color: $color-black
+        & p 
+          width: 100%
+          height: 60px
+          padding-left: 5px
+          word-wrap: break-word
+          font-size: .8em
+          text-align: left
+          color: $color-black
+
+.carousel__container-item:hover ~ .carousel__container-item 
+  transform: translate3d(20px, 0, 0 )
+  transition: .3s
+
+.carousel__container:hover .carousel__container-item 
+  opacity: .3
+  transition: .3s
+
+.carousel__container:hover .carousel__container-item:hover 
+  transform: scale(1.2)
+  opacity: 1
+  transition: .3s
 
 
 
