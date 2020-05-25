@@ -159,19 +159,42 @@
     opacity: .3
     z-index: 1
   &__content
-      position: absolute
-      display: block
-      @include ubications(0, 0, 550px, 100%)
-      @include margen
-      padding-top: 250px
-      color: #ffffff
-      z-index: 10
-      h2 
-        width: 100%
-        padding: 10px 0
-      p 
-        font-size: 1em
-        width: 100%
+    position: absolute
+    @include ubications(0, 0, 550px, 100%)
+    @include margen
+    padding-top: 200px
+    color: #ffffff
+    z-index: 10
+    h2 
+      width: 100%
+      padding: 10px 0
+    p 
+      font-size: 1em
+      width: 280px
+    &-form
+      width: 280px
+      height: 220px
+      padding-top: 50px
+      display: flex 
+      flex-direction: column
+      justify-content: space-evenly
+      margin: 10px 0
+      & input 
+        height: 30px
+        border-radius: 7px
+        outline: none
+      & .input
+        padding-left: 20px
+        box-shadow: 0 0 3px #a7a1a1
+      & .button
+        color: $color-white
+        outline: none
+        border: 1px solid black
+        background-color: $color-secondary
+        text-shadow: 0 0 3px $color-black
+        opacity: .7
+        &:hover
+          opacity: 1
 // Bloque para estilizar los componentes correspondientes a la sección de mis proyectos
 
 .myProyects
@@ -286,6 +309,40 @@
           font-size: .8em
           text-align: left
           color: $color-black
+
+
+.contact 
+  height: 200px
+  margin-top: 15px
+  margin-bottom: 15px
+  @include margen
+  &__contenido
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-evenly
+    &-input 
+      padding-left: 15px
+      border: 1px solid #a7a1a1
+      box-shadow: 0 0 5px #a7a1a1
+    &-botton 
+      outline: none
+      border: 1px solid black
+      background-color: $color-secondary
+      opacity: .5
+      &:hover
+        opacity: 1
+    & h2 
+      font-size: 1.2em
+    & input 
+      height: 30px
+      width: 200px
+      border-radius: 7px
+      
+
+
+
 
 .carousel__container-item:hover ~ .carousel__container-item 
   transform: translate3d(20px, 0, 0 )

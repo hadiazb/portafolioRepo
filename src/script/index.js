@@ -4,8 +4,7 @@ mostrarSlides(indice);
 let atras = document.getElementById('atras');
 let adelante = document.getElementById('adelante');
 
-atras.onclick = function () {  avanzaSlide(-1);
-     /*avanzaSlide(-1)*/   };
+atras.onclick = function () { avanzaSlide(-1)};
 adelante.onclick = function () {avanzaSlide(1)};
 
 let circles = document.getElementsByClassName('myProyects__circulos-circles');

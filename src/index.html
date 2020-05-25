@@ -81,9 +81,15 @@
   <section id="aboutmy" class="aboutmy">
     <div class="aboutmy__background"></div>
     <div class="aboutmy__overlay"></div>
-    <div class="aboutmy__content">
+    <div id="sobremy" class="aboutmy__content">
       <h2>Sobre mi!!!</h2>
-      <p>Hola, soy Hugo el creador de la marca <code> < CrackCode /></code>, <br> un apacionado por la programación, en <br> especial por el desarrollo web, en la actualidad soy Frontend Developer.</p>
+      <p>Hola, soy Hugo el creador de la marca <code> < CrackCode /></code>,  un apasionado por la programación, en  especial por el desarrollo web, en la actualidad soy Frontend Developer.</p>
+      <div id="contenedor" class="aboutmy__content-form">
+        <h3>Trabajemos juntos</h3>
+        <input class="input" type="name" placeholder="Name*">
+        <input class="input" type="email" placeholder="email*">
+        <input class="button" type="submit" value="Suscribete">
+      </div>
     </div>
   </section>
 
@@ -210,11 +216,17 @@
     </div>
   </section>
 
-  <section class="contact">
-
+  <section id="contact" class="contact">
+    <div class="contact__contenido">
+      <h2>Trabajemos juntos</h2>
+      <input class="contact__contenido-input" type="name" placeholder="Name*">
+      <input class="contact__contenido-input" type="email" placeholder="email*">
+      <input class="contact__contenido-botton" type="submit" value="Suscribete">
+    </div>
   </section>
 
 </body>
 <script type="module" src="./script/index.js"></script>
 <script type="module" src="./script/slider.js"></script>
+<script type="module" src="./script/contact.js"></script>
 </html>

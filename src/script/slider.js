@@ -13,14 +13,15 @@ function test() {
     console.log('true');
     document.getElementById('mobile').style.left = '0';
     document.getElementById('mobile').style.top = '0';
-    document.getElementById('mobile').style.transition = '1.5s';
+    document.getElementById('mobile').style.transition = '1s';
     contador = 0;
   } else {
     console.log('false');
-    document.getElementById('mobile').style.transition = '1.5s';
+    document.getElementById('mobile').style.transition = '1s';
     document.getElementById('mobile').style.left = '-100%';
     document.getElementById('mobile').style.top = '-100%';
     contador = 1;
   }
+  
 }
 
