@@ -7,11 +7,9 @@ function event(event) {
     console.log(flag.matches);
     document.getElementById('contact').style.display = 'block'
     document.getElementById('sobremy').style.padding = '250px 20px 0 20px' ;
-    document.getElementById('contenedor').style.display = 'none';
   } else {
     console.log(flag.matches);
     document.getElementById('contact').style.display = 'none';
     document.getElementById('sobremy').style.padding = '50px 20px 0 20px' ;
-    document.getElementById('contenedor').style.display = 'flex';
   }
 }
