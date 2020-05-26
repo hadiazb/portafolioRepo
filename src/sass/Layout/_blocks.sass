@@ -108,18 +108,46 @@
   @include flex-two
   color: #fff
   &__content
-    max-width: 40rem
-    padding-left: 1rem
-    padding-right: 1rem
-    margin: auto
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center 
+    flex-wrap: wrap
     z-index: 10
     text-align: center
-    h1 
-      padding: 20px
-      text-shadow: 0 0 15px #000
-    p 
-      text-shadow: 0 0 5px #000
-      padding-bottom: 50px 
+    &-net  
+      width: 40% 
+      min-width: 300px
+      height: 35%
+      margin: 20px 5%  0
+      h1 
+        padding: 20px
+        text-shadow: 0 0 15px #000
+      h2 
+        padding: 20px
+        text-shadow: 0 0 15px #000
+      p 
+        text-shadow: 0 0 5px #000
+        padding-bottom: 10px 
+      & a 
+        text-decoration: none
+        width: 50px
+        color: $color-secondary
+        span 
+          font-size: 25px
+      & .socialNet
+        width: 150px
+        height: 40px
+        margin: 0 auto
+        display: flex
+        justify-content: space-evenly
+        align-items: center 
+        & a 
+          text-decoration: none 
+          color: $color-secondary
+          & span 
+            font-size: 25px
   &__video
     position: absolute
     @include ubications(0, 0, $altura-video, 100%)
@@ -374,9 +402,14 @@
             &:hover 
               text-decoration: underline
             & span 
+              width: 40px
               padding-right: 10px
               font-size: 1.5em
 
+
+// @media screen and ($width-nameTwo : $breakpoint-md) 
+//   .footer__contenedor
+//     justify-content: space-around
 // Bloque correspondiente a la sección de terminos y condiciones 
 
 .piePagina
