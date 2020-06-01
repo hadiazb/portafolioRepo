@@ -1,16 +1,20 @@
-const flag = window.matchMedia('screen and (max-width:500px)');
-console.log(flag.matches);
+const body = document.querySelector('body')
 
-flag.addListener(event);
-
-function event(event) {
-  if (event.matches) {
-    // console.log(flag.matches);
-    document.getElementById('contact').style.display = 'block'
-    document.getElementById('sobremy').style.padding = '250px 20px 0 20px' ;
+body.onload = function() {
+  const flag = window.matchMedia('screen and (max-width:900px)');
+  console.log(flag.matches);
+  
+  if (flag.matches) {
+    document.getElementById('informationOne').innerHTML = '';
+    document.getElementById('informationTwo').innerHTML = '';
+    document.getElementById('informationThree').innerHTML = '';
+    document.getElementById('informationFour').innerHTML = '';
+    
   } else {
-    // console.log(flag.matches);
-    document.getElementById('contact').style.display = 'none';
-    document.getElementById('sobremy').style.padding = '50px 20px 0 20px' ;
+    document.getElementById('informationOne').innerHTML = 'Lorem, ipsum dolor sit amet, Lorem, ipsum dolor sit amet, Lorem, ipsum dolor sit amet';
+    document.getElementById('informationTwo').innerHTML = 'Lorem, ipsum dolor sit amet, Lorem, ipsum dolor sit amet, Lorem, ipsum dolor sit amet';
+    document.getElementById('informationThree').innerHTML = 'Lorem, ipsum dolor sit amet, Lorem, ipsum dolor sit amet, Lorem, ipsum dolor sit amet';
+    document.getElementById('informationFour').innerHTML = 'Lorem, ipsum dolor sit amet, Lorem, ipsum dolor sit amet, Lorem, ipsum dolor sit amet';
   }
 }
+
