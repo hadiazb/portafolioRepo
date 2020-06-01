@@ -202,7 +202,7 @@ body::-webkit-scrollbar-thumb {
         padding: 20px;
         text-shadow: 0 0 15px #000; }
       /* line 127, src/sass/Layout/_blocks.sass */
-      .intro__content-net h2 {
+      .intro__content-net h3 {
         padding: 20px;
         text-shadow: 0 0 15px #000; }
       /* line 130, src/sass/Layout/_blocks.sass */
